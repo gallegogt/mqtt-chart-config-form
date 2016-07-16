@@ -12,7 +12,7 @@ source code and include it inside the master project.
 
 Import the component like this:
 
-```javascript
+``javascript
 import MqttChartConfigForm from
   './modules/mqtt-chart-config-form/components/mqtt-chart-config-form.jsx';
 ```
@@ -43,7 +43,7 @@ tag:
 * yAxisMinValue
 * yAxisMaxValue
 
-Ej:
+Example:
 
 ```jsx
 render(
@@ -51,7 +51,7 @@ render(
 );
 ```
 
-## Form Submition
+## Form Submission
 
 The main purpose of the form is to allow the user to set configuration
 parameters for the MQTT Chart and then **modify the behavior of that chart with
@@ -76,4 +76,4 @@ Example:
 }
 ```
 
-A reducer can consume this action and adjust the chart state acordingly.
+A reducer can consume this action and adjust the chart state accordingly.
