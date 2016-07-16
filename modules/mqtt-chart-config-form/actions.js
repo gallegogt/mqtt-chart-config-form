@@ -11,6 +11,6 @@ const SUBMITED = 'MQTT_CHART_CONFIG_FORM_SUBMIT';
 export const submit = (data) => (
   {
     type: SUBMITED,
-    data: data
+    data,
   }
 );

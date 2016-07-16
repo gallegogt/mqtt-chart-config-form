@@ -1,5 +1,3 @@
-'use strict';
-
 // import React and some React properties
 import React, { Component, PropTypes } from 'react';
 
@@ -27,7 +25,7 @@ const FORM_NAME = 'mqttChartConfigForm';
  */
 const submitForm = (data, dispatch) => {
   dispatch(submitAction(data));
-}
+};
 
 class MqttChartConfigForm extends Component {
   static propTypes = {
@@ -72,30 +70,44 @@ class MqttChartConfigForm extends Component {
    */
   render() {
     // we will use the props handled by redux-form
-    const {fields: { xAxisTitle, yAxisTitle, yAxisMinValue, yAxisMaxValue },
-      handleSubmit} = this.props;
+    const { fields: { xAxisTitle, yAxisTitle, yAxisMinValue, yAxisMaxValue },
+      handleSubmit } = this.props;
     return (
-      <form className="mqtt-chart-config-form"
-        onSubmit={handleSubmit(submitForm)}>
+      <form
+        className="mqtt-chart-config-form"
+        onSubmit={handleSubmit(submitForm)}
+      >
         <div>
           <label>X Axis</label>
-          <input type="text" placeholder="X Axis Title"
-            {...xAxisTitle} />
+          <input
+            type="text"
+            placeholder="X Axis Title"
+            {...xAxisTitle}
+          />
         </div>
         <div>
           <label>Y Axis</label>
-          <input type="text" placeholder="Y Axis Title"
-            {...yAxisTitle} />
+          <input
+            type="text"
+            placeholder="Y Axis Title"
+            {...yAxisTitle}
+          />
         </div>
         <div>
           <label>Y Axis Min</label>
-          <input type="number" placeholder="Y Axis Min Value"
-            {...yAxisMinValue} />
+          <input
+            type="number"
+            placeholder="Y Axis Min Value"
+            {...yAxisMinValue}
+          />
         </div>
         <div>
           <label>Y Axis Max</label>
-          <input type="number" placeholder="Y Axis Max Value"
-            {...yAxisMaxValue} />
+          <input
+            type="number"
+            placeholder="Y Axis Max Value"
+            {...yAxisMaxValue}
+          />
         </div>
         <button type="submit">Ok</button>
       </form>
@@ -115,6 +127,6 @@ export default reduxForm({
     xAxisTitle: '',
     yAxisTitle: '',
     yAxisMinValue: '',
-    yAxisMaxValue: ''
-  }
+    yAxisMaxValue: '',
+  },
 })(MqttChartConfigForm);
