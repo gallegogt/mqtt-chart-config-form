@@ -56,7 +56,7 @@ render(
 );
 ```
 
-*Note*: `<ParentComponent>` is just an example.
+*Note*: `<ParentComponent> is just an example.
 
 ## Props
 
@@ -80,7 +80,7 @@ render(
 
 The main purpose of the form is to allow the user to set configuration
 parameters for the MQTT Chart and then **modify the behavior of that chart with
-those parameters**. For that, there following action is dispatched:
+those parameters**. For that, the following action is dispatched:
 
 `MQTT_CHART_CONFIG_FORM_SUBMIT`
 
