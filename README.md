@@ -56,7 +56,7 @@ render(
 );
 ```
 
-*Note*: <ParentComponent> is just an example.
+*Note*: `<ParentComponent>` is just an example.
 
 ## Props
 
