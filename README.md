@@ -37,7 +37,7 @@ You can use the rest of the files:
 
 Import the component like this:
 
-``javascript
+```javascript
 import MqttChartConfigForm from
   './modules/mqtt-chart-config-form/components/mqtt-chart-config-form.jsx';
 ```
