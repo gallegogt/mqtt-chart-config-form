@@ -8,6 +8,31 @@ another project: MQTT Redux Chart
 This repository is just temporal. You should clone or download it, take the
 source code and include it inside the master project.
 
+## The "Sauce"
+
+To use the component in other project you will probably just need
+the `modules/mqtt-chart-config-form` directory and it's content.
+
+You will also need to be sure to met the following dependencies:
+
+* react
+* redux-form
+
+*Note*: more details can be found inside `package.json`
+
+You will probably need to transpilate most of the code. You can use Babel for
+this. You will also need a saas compilator for the stylesheet. Finally, you can
+pack everything using webpack.
+
+## Then, What are all the other files for?
+
+You can use the rest of the files:
+
+* to get some ideas of how to use the component in a bigger project
+* to use as a scaffolding for bigger projects
+* to run the code in a browser and evaluate how it works and looks (you can
+  execute `npm run dev` for this or run it using `webpack-dev-server`)
+
 # Usage
 
 Import the component like this:
