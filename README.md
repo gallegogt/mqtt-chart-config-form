@@ -77,3 +77,19 @@ Example:
 ```
 
 A reducer can consume this action and adjust the chart state accordingly.
+
+# Linting
+
+ESLinter is being used, with the following presets:
+
+* eslint:recommended"
+* plugin:react/recommended"
+* **airbnb**
+
+*Note*: airbnb preset is very restrictive, but it helps to achieve a very clean
+and readable code. It's also a very common preset for serious projects.
+
+# Language
+
+All text was written in English or translated from Spanish to English, because
+in the future the whole final project (MQTT Redux Chart) could be open source.
