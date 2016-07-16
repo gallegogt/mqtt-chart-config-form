@@ -42,7 +42,7 @@ import MqttChartConfigForm from
   './modules/mqtt-chart-config-form/components/mqtt-chart-config-form.jsx';
 ```
 
-*Note*: the exact directory could depend on the location for the file where
+*Note*: the exact path could depend on the location for the file where
 you are making the import. The above code considers you are doing the import
 inside a file in the root directory.
 
